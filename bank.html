@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header id="header">
+        <p class="text-5xl text-center mt-10 mb-20">
+          Functional
+          <span class="font-semibold text-violet-700">Baap-Er-Bank</span>!!!
+        </p>
+    </header>
+
+    <main class="main">
+        <!-- <section class="money-list">
+            <div class="dep-with-bal  flex justify-center gap-x-5 just">
+                <div class="depo bg-gray-700 text-white pl-8 pr-40 rounded-lg pt-6 pb-14">
+                    <p class="text-4xl font-semibold pb-2 ">Deposit</p>
+                    <p class="text-5xl font-bold ">$ 00</p>
+                </div>
+                <div class="withdraw bg-indigo-600 text-white pl-8 pr-40 rounded-lg py-6 ">
+                    <p class="text-4xl font-semibold pb-2">Withdraw</p>
+                    <p class="text-5xl font-bold">$ 00</p>
+                </div>
+                <div class="balance bg-violet-700 text-white pl-8 pr-40 rounded-lg py-6">
+                    <p class="text-4xl font-semibold pb-2">Balance</p>
+                    <p class="text-5xl font-bold">$ 1240</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="money-class">
+            <div class="dep-with-balance w-8/12 mx-auto grid grid-cols-3 gap-x-5 ">
+                <div class="depo bg-emerald-200 pt-6 pb-20 pl-6 rounded-lg">
+                    <p class="text-4xl font-medium">Deposit</p>
+                    <p class="text-6xl font-semibold">$<span id="past-deposit">00</span></p>
+                </div>
+                <div class="depo bg-violet-200 pt-6 pb-20 pl-6 rounded-lg">
+                    <p class="text-4xl font-medium">Withdraw</p>
+                    <p class="text-6xl font-semibold">$<span id="withdraw">00</span></p>
+                </div>
+                <div class="depo bg-rose-200 pt-6 pb-20 pl-6 rounded-lg">
+                    <p class="text-4xl font-medium">Balance</p>
+                    <p class="text-6xl font-semibold">$<span id="balance">00</span></p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="input-money">
+            <div class="depo-withdraw-input w-8/12 my-6 mx-auto grid grid-cols-2 gap-x-5 rounded-lg">
+                <div class="depo-input bg-orange-300 pl-10 py-8 rounded-lg">
+                    <p class="text-3xl font-semibold pb-4">Your Deposit</p>
+                    <p><input type="text" placeholder="Enter your deposit ammount" class="mb-4 px-4 py-2 rounded-md w-3/5" id="deposit-input"></p>
+                    <input type="submit" value="Deposit" class="bg-violet-900 text-white text-xl px-4 py-2 rounded-md hover:bg-violet-700 cursor-pointer" id="deposit-btn">
+                </div>
+                <div class="depo-input bg-teal-300 pl-10 py-8 rounded-lg">
+                    <p class="text-3xl font-semibold pb-4">Your Withdraw</p>
+                    <p><input type="text" placeholder="Enter your deposit ammount" class="mb-4 px-4 py-2 rounded-md w-3/5" id="withdraw-input"></p>
+                    <input type="submit" value="Withdraw" class="bg-violet-900 text-white text-xl px-4 py-2 rounded-md hover:bg-violet-700 cursor-pointer" id="withdraw-btn">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+  </body>
+</html>
